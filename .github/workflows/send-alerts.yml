@@ -1,0 +1,19 @@
+name: send-alerts
+on:
+  schedule:
+    - cron: "00 1 * * *"
+  workflow_dispatch:
+jobs:
+  run-script:
+    runs-on: Ubuntu-20.04
+    steps:
+      - name: Install canvasapi
+        run: pip3 install canvasapi==3.0.0
+      - name: Checkout this repo
+        uses: actions/checkout@v3
+      - name: Send alerts
+        env:
+          CANVAS_URL: ${{ secrets.CANVAS_URL }}
+          CANVAS_KEY: ${{ secrets.CANVAS_KEY }}
+          CANVAS_COURSE_ID: ${{ secrets.CANVAS_COURSE_ID }}
+        run: python3 autoWarnings.py
