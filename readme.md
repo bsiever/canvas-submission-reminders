@@ -12,7 +12,7 @@ When run this will:
 
 This repo includes a GitHub action to run the script daily.  It requires environment variables to get access to the Canvas instance and course.
 
-**WARNING: This runs daily and will accrue minutes of cloud access.  Be sure to disable the action at the end of the semester!!!**  It may be best to only have one version of this on GitHub and update the `CANVAS_COURSE_ID` each semester.
+**WARNING: This runs daily and will accrue minutes of cloud access.  Be sure to disable the action at the end of the semester!!!**  It may be best to only have one version of this on GitHub and update the `CANVAS_COURSE_ID` each semester.  Workflows (actions) can be disabled when not in use.  See https://docs.github.com/en/actions/using-workflows/disabling-and-enabling-a-workflow .  Disable the "send-alerts" workflow when not in use.
 
 ## Required Environment Variables
 
