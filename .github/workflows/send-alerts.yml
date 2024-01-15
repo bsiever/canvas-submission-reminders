@@ -6,6 +6,7 @@ on:
 jobs:
   run-script:
     runs-on: Ubuntu-20.04
+    timeout-minutes: 5
     steps:
       - name: Install canvasapi
         run: pip3 install canvasapi==3.0.0
