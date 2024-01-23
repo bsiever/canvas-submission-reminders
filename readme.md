@@ -1,3 +1,8 @@
+# Warning 
+
+This uses GitHub Actions, which may impose charges. (In my case it looks like it should always be well under my usage tier and "free").
+
+I am not responsible for any charges that others incur through use/misuse. Be sure you review the billing/usage details that apply to you, set any budget limits, etc.: https://docs.github.com/en/billing/managing-billing-for-github-actions 
 
 # Overview
 
